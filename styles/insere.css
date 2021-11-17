@@ -1,0 +1,280 @@
+body{
+    background-image: linear-gradient(50deg, rgb(0, 0, 0), rgb(22, 22, 22));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+h3
+    {
+    text-align:center;
+    font-family: sans-serif !important;
+    }
+
+    .btns{
+        position: relative;
+    }
+        
+    .btn{
+        position: relative;
+        padding: 15px;
+        cursor: pointer;
+        overflow: hidden;
+        width: 250px;
+        font-weight: bold;
+        transition: all .2s;
+        background: transparent;
+        outline: none;
+        border: 1px transparent;
+        -webkit-box-reflect: below 1px linear-gradient(transparent, #0003);
+    }
+
+    .btn:hover{
+        color: #fff !important;
+        transition-delay: .4s;
+    }
+
+    .btn::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20px;
+        height: 20px;
+        transition: all .3s;
+    }
+
+    #btn1{
+        color: #06fd58;
+    }
+
+    #btn1::before{
+        border-top: 2px solid #06fd58;
+        border-left: 2px solid #06fd58;
+    }
+    #btn1::before{
+        border-top: 2px solid #06fd58;
+        border-left: 2px solid #06fd58;
+    }
+
+    #btn1:hover{
+        background: #06fd58;
+        box-shadow: 0 0 50px #06fd58;
+    }
+
+    #btn1::after{
+        border-bottom: 2px solid #06fd58;
+        border-right: 2px solid #06fd58;
+    }
+
+    #btn2{
+        color: #fd0606;
+    }
+
+    #btn2::before{
+        border-top: 2px solid #fd0606;
+        border-left: 2px solid #fd0606;
+    }
+    #btn2::before{
+        border-top: 2px solid #fd0606;
+        border-left: 2px solid #fd0606;
+    }
+
+    #btn2:hover{
+        background: #fd0606;
+        box-shadow: 0 0 50px #fd0606;
+    }
+
+    #btn2::after{
+        border-bottom: 2px solid #fd0606;
+        border-right: 2px solid #fd0606;
+    }
+
+    #btn3{
+        color: #0654fd;
+    }
+
+    #btn3::before{
+        border-top: 2px solid #0654fd;
+        border-left: 2px solid #0654fd;
+    }
+    #btn3::before{
+        border-top: 2px solid #0654fd;
+        border-left: 2px solid #0654fd;
+    }
+
+    #btn3:hover{
+        background: #0654fd;
+        box-shadow: 0 0 50px #0654fd;
+    }
+
+    #btn3::after{
+        border-bottom: 2px solid #0654fd;
+        border-right: 2px solid #0654fd;
+    }
+
+    
+    #btn4{
+        color: #6506fd;
+    }
+
+    #btn4::before{
+        border-top: 2px solid #6506fd;
+        border-left: 2px solid #6506fd;
+    }
+    #btn4::before{
+        border-top: 2px solid #6506fd;
+        border-left: 2px solid #6506fd;
+    }
+
+    #btn4:hover{
+        background: #6506fd;
+        box-shadow: 0 0 50px #6506fd;
+    }
+
+    #btn4::after{
+        border-bottom: 2px solid #6506fd;
+        border-right: 2px solid #6506fd;
+    }
+
+
+    .btn:hover::before{
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .btn::after{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 20px;
+        height: 20px;
+        transition: all .4s;
+
+    }
+
+    .btn:hover::after{
+        width: 100%;
+        height: 100%;
+    }
+
+
+    form{
+        position: relative;
+        padding: 50px;
+        color: #fff;
+        background: #151512;
+        width:80%;
+        margin-top: 12%;
+
+    }
+
+    div{
+        margin-top: 30px;
+    }
+
+
+    @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+/*===== VARIABLES CSS =====*/
+:root{
+  /*===== Colores =====*/
+  --first-color: #1A73E8;
+  --input-color: #80868B;
+  --border-color: #DADCE0;
+
+  /*===== Fuente y tipografia =====*/
+  --body-font: 'Roboto', sans-serif;
+  --normal-font-size: 1rem;
+  --small-font-size: .75rem;
+}
+  
+/*===== BASE =====*/
+*,::before,::after{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  padding: 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+}
+h1{
+  margin: 0;
+}
+
+/*===== FORM =====*/
+
+
+.form__div{
+  position: relative;
+  height: 48px;
+  margin-bottom: 1.5rem;
+}
+.form__input{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  font-size: var(--normal-font-size);
+  border: 1px solid var(--border-color);
+  border-radius: .5rem;
+  outline: none;
+  padding: 1rem;
+  background: none;
+  z-index: 1;
+}
+.form__label{
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  padding: 0 .25rem;
+  background-color: #151512;
+  color: var(--input-color);
+  font-size: var(--normal-font-size);
+  transition: .3s;
+}
+.form__button{
+  display: block;
+  margin-left: auto;
+  padding: .75rem 2rem;
+  outline: none;
+  border: none;
+  background-color: var(--first-color);
+  color: #fff;
+  font-size: var(--normal-font-size);
+  border-radius: .5rem;
+  cursor: pointer;
+  transition: .3s;
+}
+.form__button:hover{
+  box-shadow: 0 10px 36px rgba(0,0,0,.15);
+}
+
+/*Input focus move up label*/
+.form__input:focus + .form__label{
+  top: -.5rem;
+  left: .8rem;
+  color: var(--first-color);
+  font-size: var(--small-font-size);
+  font-weight: 500;
+  z-index: 10;
+}
+
+/*Input focus sticky top label*/
+.form__input:not(:placeholder-shown).form__input:not(:focus)+ .form__label{
+  top: -.5rem;
+  left: .8rem;
+  font-size: var(--small-font-size);
+  font-weight: 500;
+  z-index: 10;
+}
+
+/*Input focus*/
+.form__input:focus{
+  border: 1.5px solid var(--first-color);
+  
+}
